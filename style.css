@@ -1,0 +1,36 @@
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+html {
+  background-image: url(assets/background.png);
+  background-repeat: repeat;
+  background-size: cover;
+}
+nav {
+  height: 8rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  height: 8rem;
+  width: 8rem;
+  color: white;
+  background-image: url(assets/BUNKER-BRÜDER.svg);
+  background-size: cover;
+}
+.banner {
+  height: 10rem;
+  width: 100%;
+  margin-top: 10rem;
+
+  img {
+    height: 20rem;
+    width: 100%;
+  }
+}
