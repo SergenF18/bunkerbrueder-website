@@ -7,6 +7,7 @@ html {
   background-image: url(assets/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 nav {
   height: 6rem;
@@ -19,8 +20,8 @@ nav {
 }
 .logo {
   height: 12rem;
-  width: 12rem;
-
+  width: 10rem;
+  margin: auto;
   color: white;
   background-image: url(assets/BUNKER-BRÜDER.svg);
   background-size: cover;
@@ -38,6 +39,7 @@ nav {
   height: 20rem;
   width: 100%;
   margin-top: 3rem;
+  margin-left: 1rem;
 
   background-image: url(assets/Pictures/IMG-20240311-WA0059.jpg);
   background-size: contain;
@@ -68,7 +70,7 @@ nav {
 }
 .biography-container {
   height: 30rem;
-  width: 30rem;
+  width: 20rem;
   margin: auto;
   color: white;
 }
