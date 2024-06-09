@@ -75,6 +75,11 @@ nav {
   color: white;
 
   @media (min-width: 760px) {
+    height: 35rem;
+    width: 40rem;
+  }
+  @media (min-width: 1000px) {
+    height: 40rem;
     width: 40rem;
   }
 }
@@ -106,7 +111,7 @@ nav {
     margin-top: 3rem;
   }
 }
-.gallery-container {
+.gallery {
   height: 20rem;
   width: 20rem;
   margin: auto;
@@ -126,5 +131,28 @@ nav {
   @media (min-width: 760px) {
     height: 14rem;
     width: 14rem;
+  }
+}
+
+.picture-container {
+  display: flex;
+  height: 20.5rem;
+  width: 20rem;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+.picture {
+  scroll-snap-align: start;
+  img {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+.picture-3 {
+  scroll-snap-align: start;
+
+  img {
+    height: 20rem;
+    width: 30rem;
   }
 }
