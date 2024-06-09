@@ -190,6 +190,12 @@ nav {
     height: 2rem;
     width: 2rem;
     font-size: 30px;
+    color: lightgreen;
+    margin-left: 1rem;
+
+    &:visited {
+      color: lightgreen;
+    }
   }
 }
 .cover {
