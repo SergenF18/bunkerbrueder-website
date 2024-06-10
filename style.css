@@ -3,12 +3,24 @@
   padding: 0;
   font-family: Poppins, sans-serif;
 }
-html {
+/* html {
+  background-image: url(assets/Pictures/background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+} */
+body::before {
   background-image: url(assets/Pictures/background.webp);
   background-repeat: no-repeat;
   background-size: auto 100lvh;
-  background-attachment: fixed;
   background-position: top center;
+  position: fixed;
+  background-color: black;
+  content: " ";
+  inset: 0;
+  height: 100vh;
+  z-index: -1;
 }
 nav {
   height: 6rem;
