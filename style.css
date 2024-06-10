@@ -259,8 +259,45 @@ audio::webkit-controls-panel {
       list-style-type: none;
     }
   }
+}
+.fa-instagram {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 
-  ul:nth-child(1) {
-    color: linear-gradient(45deg #f07833, #701986);
+  &:visited {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5851db,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #fd1d1d
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+.fa-soundcloud {
+  color: rgb(255, 115, 0);
+
+  &:visited {
+    color: rgb(255, 115, 0);
+  }
+}
+.fa-youtube {
+  color: red;
+
+  &:visited {
+    color: red;
   }
 }
