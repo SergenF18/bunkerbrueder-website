@@ -3,17 +3,17 @@
   padding: 0;
   font-family: Poppins, sans-serif;
 }
-html {
+/* html {
   background-image: url(assets/Pictures/background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: top center;
   background-color: black;
-}
-/* body::before {
+} */
+body::before {
   background-image: url(assets/Pictures/background.webp);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: auto 100lvh;
   background-position: top center;
   position: fixed;
@@ -22,7 +22,7 @@ html {
   inset: 0;
   height: 100vh;
   z-index: -1;
-} */
+}
 nav {
   height: 6rem;
   width: 100%;
@@ -217,9 +217,50 @@ nav {
   width: 10rem;
   background-image: url(assets/Pictures/Cover\ LSR0037\ JPG.jpg);
   background-size: contain;
-  margin-left: 4.5rem;
+  margin-left: calc(50% - 5rem);
   margin-top: 1rem;
 }
 audio::webkit-controls-panel {
   height: 1rem;
+}
+.booking {
+  margin-top: 32rem;
+  margin-left: calc(50% - 7.5rem);
+  margin-bottom: 2rem;
+  height: 5rem;
+  width: 15rem;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(137, 43, 226, 0.336);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px 0 rgba(137, 43, 226, 0.336);
+  color: white;
+  font-size: larger;
+
+  &:hover {
+    background-color: rgba(137, 43, 226, 0.536);
+  }
+
+  @media (min-width: 760px) {
+    margin-top: 20rem;
+    margin-left: calc(50% - 7.5rem);
+    margin-bottom: 2rem;
+  }
+}
+.social-links {
+  ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    li {
+      margin-right: 2rem;
+      font-size: 3rem;
+      list-style-type: none;
+    }
+  }
+
+  ul:nth-child(1) {
+    color: linear-gradient(45deg #f07833, #701986);
+  }
 }
