@@ -24,7 +24,7 @@ body::before {
 }
 .form-container {
   height: 30rem;
-  width: 30rem;
+  width: 20rem;
   margin: auto;
   color: white;
   background-color: rgba(170, 164, 173, 0.377);
@@ -34,13 +34,17 @@ body::before {
   border-radius: 12px;
   text-align: center;
 
+  @media (min-width: 760px) {
+    width: 30rem;
+  }
+
   form {
     padding: 2rem;
     font-weight: bold;
   }
 
   input[type="text"] {
-    width: 25rem;
+    width: 15rem;
     height: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -51,10 +55,14 @@ body::before {
     background-color: rgba(98, 33, 131, 0.377);
     box-shadow: 0 8px 32px 0 rgba(245, 245, 245, 0.24);
     font-weight: bold;
+
+    @media (min-width: 760px) {
+      width: 25rem;
+    }
   }
 
   input[type="email"] {
-    width: 25rem;
+    width: 15rem;
     height: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -65,9 +73,13 @@ body::before {
     background-color: rgba(98, 33, 131, 0.377);
     box-shadow: 0 8px 32px 0 rgba(245, 245, 245, 0.24);
     font-weight: bold;
+
+    @media (min-width: 760px) {
+      width: 25rem;
+    }
   }
   textarea {
-    width: 25rem;
+    width: 15rem;
     height: 5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -78,6 +90,10 @@ body::before {
     background-color: rgba(98, 33, 131, 0.377);
     box-shadow: 0 8px 32px 0 rgba(245, 245, 245, 0.24);
     font-weight: bold;
+
+    @media (min-width: 760px) {
+      width: 25rem;
+    }
   }
   button {
     height: 3rem;
