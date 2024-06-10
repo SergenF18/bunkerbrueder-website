@@ -6,9 +6,9 @@
 html {
   background-image: url(assets/Pictures/background.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100lvh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top center;
 }
 nav {
   height: 6rem;
