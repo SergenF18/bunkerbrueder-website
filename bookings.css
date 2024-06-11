@@ -111,4 +111,9 @@ body::before {
       background-color: rgba(98, 33, 131, 0.8);
     }
   }
+  a {
+    color: white;
+    font-size: large;
+    text-shadow: 0 0 5px white;
+  }
 }

@@ -24,7 +24,7 @@ body::before {
   z-index: -1;
 }
 nav {
-  height: 6rem;
+  height: 8rem;
   width: 100%;
   position: static;
   left: 0;
@@ -53,7 +53,7 @@ nav {
   height: 20rem;
   width: 100%;
   margin-top: 3rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 
   background-image: url(assets/Pictures/IMG-20240311-WA0059.jpg);
   background-size: contain;
@@ -137,11 +137,11 @@ nav {
     flex-direction: row;
     height: 20rem;
     width: 40rem;
+    gap: 2rem;
   }
 }
 
 .gallery {
-  height: 20rem;
   width: 20rem;
   margin: auto;
 
@@ -169,24 +169,18 @@ nav {
   width: 20rem;
   margin: auto;
   overflow: auto hidden;
+  scrollbar-width: thin;
   scroll-snap-type: x mandatory;
   box-shadow: 0 8px 32px 0 rgba(245, 245, 245, 0.24);
   border-radius: 12px;
 }
-.picture {
+.picture-container img {
+  width: 20rem;
+  max-height: 100%;
+  object-fit: cover;
   scroll-snap-align: start;
-  img {
-    height: 20rem;
-    width: 20rem;
-  }
-}
-.picture-3 {
-  scroll-snap-align: start;
-
-  img {
-    height: 20rem;
-    width: 30rem;
-  }
+  flex-shrink: 0;
+  display: block;
 }
 .latest-release-container {
   height: 20rem;
@@ -220,23 +214,63 @@ nav {
   margin-left: calc(50% - 5rem);
   margin-top: 1rem;
 }
-audio::webkit-controls-panel {
-  height: 1rem;
+audio::-webkit-media-controls-panel {
+  background-color: rgba(25, 9, 39, 0.685);
 }
-.booking {
-  margin-top: 32rem;
-  margin-left: calc(50% - 7.5rem);
-  margin-bottom: 2rem;
+audio::-webkit-media-controls-play-button {
+  background-color: rgba(137, 43, 226, 0.24);
+  border-radius: 50%;
+}
+audio::-webkit-media-controls-timeline {
+  background-color: rgba(137, 43, 226, 0.158);
+  border-radius: 30%;
+}
+audio::-webkit-media-controls-current-time-display {
+  color: white;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  color: white;
+}
+audio::-webkit-media-controls-seek-back-button {
+  background-color: rgba(137, 43, 226, 0.24);
+  border-radius: 50%;
+}
+audio::-webkit-media-controls-seek-forward-button {
+  background-color: rgba(137, 43, 226, 0.24);
+  border-radius: 50%;
+}
+audio::-webkit-media-controls-volume-slider {
+  background-color: rgba(137, 43, 226, 0.24);
+  border-radius: 50%;
+}
+audio::-webkit-media-controls-mute-button {
+  background-color: rgba(137, 43, 226, 0.24);
+  border-radius: 50%;
+}
+.booking-container {
   height: 5rem;
   width: 15rem;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.booking {
+  margin-left: calc(50% - 7.5rem);
+  margin-bottom: 2rem;
+  padding: 2rem;
+  height: 5rem;
+  width: 15rem;
+  outline: 1px solid rgba(128, 0, 128, 0.493);
   border-radius: 20px;
   border: none;
-  background-color: rgba(137, 43, 226, 0.336);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  box-shadow: 0 8px 32px 0 rgba(137, 43, 226, 0.336);
+  background-color: rgba(137, 43, 226, 0.575);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 8px 40px 0 rgba(137, 43, 226, 0.712);
   color: white;
   font-size: larger;
+  text-decoration: none;
+  font-weight: 400;
 
   &:hover {
     background-color: rgba(137, 43, 226, 0.536);
@@ -251,8 +285,9 @@ audio::webkit-controls-panel {
 .social-links {
   ul {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     justify-content: center;
+
     li {
       margin-right: 2rem;
       font-size: 3rem;
@@ -272,9 +307,10 @@ audio::webkit-controls-panel {
   );
   color: transparent;
   background-clip: text;
+  filter: drop-shadow(1px 1px 0.75rem #833ab4);
 
   &:visited {
-    background: linear-gradient(
+    background-image: linear-gradient(
       45deg,
       #405de6,
       #5851db,
@@ -289,6 +325,7 @@ audio::webkit-controls-panel {
 }
 .fa-soundcloud {
   color: rgb(255, 115, 0);
+  filter: drop-shadow(1px 1px 0.5rem rgb(255, 115, 0));
 
   &:visited {
     color: rgb(255, 115, 0);
@@ -296,6 +333,7 @@ audio::webkit-controls-panel {
 }
 .fa-youtube {
   color: red;
+  filter: drop-shadow(1px 1px 0.5rem red);
 
   &:visited {
     color: red;
