@@ -283,6 +283,7 @@ audio::-webkit-media-controls-mute-button {
   }
 }
 .social-links {
+  width: 100%;
   ul {
     display: flex;
     gap: 3rem;
