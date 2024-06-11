@@ -165,10 +165,10 @@ nav {
 
 .picture-container {
   display: flex;
-  height: 21.35rem;
+  height: 20rem;
   width: 20rem;
   margin: auto;
-  overflow: auto;
+  overflow: auto hidden;
   scroll-snap-type: x mandatory;
   box-shadow: 0 8px 32px 0 rgba(245, 245, 245, 0.24);
   border-radius: 12px;
@@ -261,7 +261,7 @@ audio::webkit-controls-panel {
   }
 }
 .fa-instagram {
-  background: linear-gradient(
+  background-image: linear-gradient(
     45deg,
     #405de6,
     #5851db,
@@ -270,8 +270,8 @@ audio::webkit-controls-panel {
     #e1306c,
     #fd1d1d
   );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
 
   &:visited {
     background: linear-gradient(
@@ -283,8 +283,8 @@ audio::webkit-controls-panel {
       #e1306c,
       #fd1d1d
     );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
   }
 }
 .fa-soundcloud {
