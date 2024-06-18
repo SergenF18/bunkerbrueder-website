@@ -3,14 +3,14 @@
   padding: 0;
   font-family: Poppins, sans-serif;
 }
-/* html {
-  background-image: url(assets/Pictures/background.webp);
+html {
+  /* background-image: url(assets/Pictures/background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: top center;
+  background-position: top center; */
   background-color: black;
-} */
+}
 body::before {
   background-image: url(assets/Pictures/background.png);
   /* background-repeat: no-repeat; */
